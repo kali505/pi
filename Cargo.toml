@@ -1,0 +1,15 @@
+[package]
+name = "pi"
+version = "0.3.0"
+edition = "2021"
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[dependencies]
+gmp-mpfr-sys = "1.5"
+rug = "1.19"
+scoped_threadpool = "0.1"
+itertools = "0.10"
