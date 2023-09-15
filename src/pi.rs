@@ -7,7 +7,7 @@ use std::{thread, thread::JoinHandle};
 const DIGITS_PER_ITER: u64 = 14_181_647_463;
 const DIGITS_PER_ITER_TIMES: u64 = 1_000_000_000;
 
-const THREADS: usize = 4;
+const THREADS: usize = 12;
 const MAX_ITER_PER_THREAD: usize = 10_000;
 
 fn calc_p(start: u32, len: usize) -> Vec<Integer> {
